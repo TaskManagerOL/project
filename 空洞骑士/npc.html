@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPC&BOSS</title>
+    <link rel="shortcut icon" href="图片素材/小骑士ico.ico" />
+    <link rel="stylesheet" href="npc.css">
+    <link rel="stylesheet" href="通用界面.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+        </div>
+        <div class="logotext">
+            <a href="index.html">
+            </a>
+        </div>
+        <ul class="subnav">
+            <li class="box1"><a class="gd" href="gd.html">骨钉&骨钉技</a></li>
+            <li class="box2"><a class="fs" href="fs.html">法术&道具</a></li>
+            <li class="box3">
+                <a id="rw" class="rw" href="npc.html">NPC&BOSS</a>
+            </li>
+            <li class="box4"><a class="hf" href="hf.html">护符大全</a></li>
+        </ul>
+    </div>
+
+    <div class="music" title="布鲁姆在线演奏OvO(可拖动哦）" id="move">
+        <video id="music" src="游戏原声/Christopher Larkin - Greenpath.mp3" autoplay="autoplay"></video>
+        <button class=" previous" id="previous" title="上一首">&#xe603;</button>
+        <button class="pause" id="pause" title="暂停">&#xe800;</button>
+        <button class="next" id="next" title="下一首">&#xe602;</button>
+        <button class="loop" id="loop" title="洗脑循环/取消循环">&#xe60f;</button>
+    </div>
+
+    <div class="in">
+        <div class="title" id="tou">剧情</div>
+        <button class="leftbutton" id="changeleft"></button>
+        <div class="scroll">
+            <button class="topbutton" id="topbutton"></button>
+            <div class="black1"></div>
+            <div class="grey1"></div>
+            <div class="choose"></div>
+            <div class="allmove" id="allmove">
+                <div class="move1">
+                    <div class="n1">虫长老</div>
+                    <div class="n2">先知</div>
+                    <div class="n3">苔藓预言家</div>
+                    <div class="n4">艾米丽塔</div>
+                    <div class="n5">巴东</div>
+                    <div class="n6">白色女士</div>
+                    <div class="n7">白王</div>
+                    <div class="n8">面具制造者</div>
+                    <div class="n9">助产妇</div>
+                    <div class="n10">蘑菇先生</div>
+                    <div class="n11">布鲁姆</div>
+                    <div class="n12">尼姆</div>
+                    <div class="n13">吸虫隐者</div>
+                </div>
+                <div class="move2">
+                    <div class="n14">柯尼法</div>
+                    <div class="n15">伊塞尔达</div>
+                    <div class="n16">斯莱</div>
+                    <div class="n17">萨鲁巴</div>
+                    <div class="n18">吉吉</div>
+                    <div class="n19">吉恩</div>
+                    <div class="n20">里姆</div>
+                    <div class="n21">钉子匠</div>
+                    <div class="n22">图克</div>
+                    <div class="n23">食腿者</div>
+                    <div class="n24">迪万</div>
+                </div>
+                <div class="move3">
+                    <div class="n25">大黄蜂</div>
+                    <div class="n26">奎若</div>
+                    <div class="n27">提索</div>
+                    <div class="n28">左特</div>
+                    <div class="n29">虫爷爷</div>
+                    <div class="n30">蜗牛萨满</div>
+                    <div class="n31">最后的鹿角虫</div>
+                    <div class="n32">阿布</div>
+                    <div class="n33">米拉</div>
+                    <div class="n34">布蕾塔</div>
+                    <div class="n35">猎人</div>
+                    <div class="n36">米莉贝尔</div>
+                    <div class="n37">小愚人</div>
+                    <div class="n38">乌恩</div>
+                    <div class="n39">灰色哀悼者</div>
+                    <div class="n40">维修虫</div>
+                    <div class="n41">寻神者</div>
+                </div>
+                <div class="move4">
+                    <div class="n42">席奥</div>
+                    <div class="n43">奥罗</div>
+                    <div class="n44">马托</div>
+                </div>
+                <div class="move5">
+                    <div class="n45">赫拉</div>
+                    <div class="n46">莫诺蒙</div>
+                    <div class="n47">卢瑞恩</div>
+                </div>
+                <div class="move6">
+                    <div class="n48">格鲁兹之母</div>
+                    <div class="n49">躁郁的毛里克</div>
+                    <div class="n50">假骑士</div>
+                    <div class="n51">反击蝇之王</div>
+                    <div class="n52">大型苔藓冲锋者</div>
+                    <div class="n53">守护者大黄蜂</div>
+                    <div class="n54">螳螂领主</div>
+                    <div class="n55">灵魂战士</div>
+                    <div class="n56">灵魂大师</div>
+                    <div class="n57">水晶守卫</div>
+                    <div class="n58">暴怒守卫</div>
+                    <div class="n59">粪虫防御者</div>
+                    <div class="n60">残破容器</div>
+                    <div class="n61">斯诺克</div>
+                    <div class="n62">吸虫之母</div>
+                    <div class="n63">叛徒领主</div>
+                    <div class="n64">蜂巢骑士</div>
+                    <div class="n65">收藏家</div>
+                    <div class="n66">岗哨大黄蜂</div>
+                    <div class="n67">奥波路波</div>
+                    <div class="n68">神之驯服者</div>
+                    <div class="n69">乌姆</div>
+                    <div class="n70">守望骑士团</div>
+                    <div class="n71">剧团团长格林</div>
+                    <div class="n72">空洞骑士</div>
+                    <div class="n73">辐光</div>
+                </div>
+                <div class="move7">
+                    <div class="n74">失败冠军</div>
+                    <div class="n75">灵魂暴君</div>
+                    <div class="n76">失落近亲</div>
+                    <div class="n77">灰色王子左特</div>
+                    <div class="n78">白色防御者</div>
+                    <div class="n79">梦魇之王格林</div>
+                </div>
+                <div class="move8">
+                    <div class="n80">泽若</div>
+                    <div class="n81">戈布</div>
+                    <div class="n82">胡长老</div>
+                    <div class="n83">无眼</div>
+                    <div class="n84">加利安</div>
+                    <div class="n85">马尔穆</div>
+                    <div class="n86">马科斯</div>
+                </div>
+                <div class="move9">
+                    <div class="n87">骨钉大师奥罗&马托</div>
+                    <div class="n88">绘画大师席奥</div>
+                    <div class="n89">骨钉贤者斯莱</div>
+                    <div class="n90">战斗姐妹</div>
+                    <div class="n91">有翼斯诺克</div>
+                    <div class="n92">纯粹容器</div>
+                    <div class="n93">无上辐光</div>
+                </div>
+            </div>
+            <div class="black2"></div>
+            <div class="grey2"></div>
+            <button class="bottombutton" id="bottombutton"></button>
+        </div>
+        <div class="line1"></div>
+        <div class="big" id="big"></div>
+        <div class="line2"></div>
+        <div class="nametxt">
+            <div class="name" id="npcname">虫长老</div>
+            <br>
+            <div class="des" id="des">相遇地点：德特茅斯中央</div>
+        </div>
+        <div class="line3"></div>
+        <div class="txt" id="txt">
+            <p>和蔼可亲的老爷爷，德特茅斯唯一一个没有下井和去探险的虫。</p>
+            <p>新手遇到的第一个NPC，他会介绍一些游戏的基本背景，不知道下一步去哪里的话也可以问问他，在获得新的道具后他也会有新的对话。</p>
+        </div>
+        <button class="rightbutton" id="changeright"></button>
+    </div>
+
+    <div class="footer">
+        <div class="pic"></div>
+    </div>
+    <script src="npc.js"></script>
+</body>
+
+</html>

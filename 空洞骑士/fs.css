@@ -1,0 +1,532 @@
+body .music {
+    top: 50vw;
+    left: 5vw;
+    display: flex;
+}
+
+.choose {
+    background-image: url(图片素材/hf/arrow1.png), url(图片素材/hf/arrow2.png), url(图片素材/hf/arrow3.png), url(图片素材/hf/arrow4.png);
+    background-repeat: no-repeat;
+    background-position: left top, right top, left bottom, right bottom;
+    position: absolute;
+    transition: all 0.2s linear;
+    z-index: 99;
+
+}
+
+.fsq {
+    width: 99vw;
+    height: 60vw;
+    background-image: url(图片素材/fs/top.png), url(图片素材/fs/bottom.png), url(图片素材/fs/tl.png), url(图片素材/fs/tr.png), url(图片素材/fs/bl.png), url(图片素材/fs/br.png);
+    background-repeat: no-repeat;
+    background-size: 50vw, 50vw, 15vw, 15vw, 15vw, 15vw;
+    background-position: top, bottom, top left, top right, bottom left, bottom right;
+    position: relative;
+    z-index: 1;
+}
+
+.mask {
+    position: absolute;
+
+    width: 8.5vw;
+    height: 11.5vw;
+    top: 8.5vw;
+    left: 6vw;
+    background-image: url(图片素材/fs/物品/mjsp+.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.rq {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 13.65vw;
+    left: 16.8vw;
+    background-image: url(图片素材/fs/物品/rqsp+.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.smtxq {
+    position: absolute;
+
+    width: 5vw;
+    height: 6vw;
+    top: 6.7vw;
+    left: 16.75vw;
+    background-image: url(图片素材/fs/物品/smtxq.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.mzd {
+    position: absolute;
+
+    width: 6.3vw;
+    height: 10vw;
+    top: 8.5vw;
+    left: 22vw;
+    background-image: url(图片素材/fs/道具/mzd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.jxmd {
+    position: absolute;
+    width: 6.3vw;
+    height: 10vw;
+    top: 8.5vw;
+    left: 28vw;
+    background-image: url(图片素材/fs/道具/jxmd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.fczy {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 22vw;
+    left: 5vw;
+    background-image: url(图片素材/fs/法术/fczy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.hwfc {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 22vw;
+    left: 12vw;
+    background-image: url(图片素材/fs/法术/hwfc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.ayzh {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 28.5vw;
+    left: 5vw;
+    background-image: url(图片素材/fs/法术/ayzh.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.hajl {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 28.5vw;
+    left: 12vw;
+    background-image: url(图片素材/fs/法术/hajl.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.hjyl {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 22vw;
+    left: 19vw;
+    background-image: url(图片素材/fs/法术/hjyl.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.syjx {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 28.5vw;
+    left: 19vw;
+    background-image: url(图片素材/fs/法术/syjx.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.aypf {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 36vw;
+    left: 9vw;
+    background-image: url(图片素材/fs/道具/aypf.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.eypf {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 36vw;
+    left: 16vw;
+    background-image: url(图片素材/fs/道具/eypf.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.dwzy {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 36vw;
+    left: 23vw;
+    background-image: url(图片素材/fs/道具/dwzy.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.sjzx {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 43vw;
+    left: 12vw;
+    background-image: url(图片素材/fs/道具/sjzx.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.tlz {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 43vw;
+    left: 19vw;
+    background-image: url(图片素材/fs/道具/tlz.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.ysmzl {
+    position: absolute;
+
+    width: 5vw;
+    height: 5vw;
+    top: 43vw;
+    left: 26vw;
+    background-image: url(图片素材/fs/道具/ysmzl.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.lhjj {
+    position: absolute;
+
+    width: 8vw;
+    height: 8vw;
+    top: 22.4vw;
+    left: 26vw;
+    background-image: url(图片素材/fs/法术/lhjj.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.azs {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 11.5vw;
+    left: 36.5vw;
+    background-image: url(图片素材/fs/物品/azs.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.cbks {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 11.5vw;
+    left: 43.5vw;
+    background-image: url(图片素材/fs/物品/cbks.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.cswz {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 11.5vw;
+    left: 50.5vw;
+    background-image: url(图片素材/fs/物品/cswz.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.dctxz {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 11.5vw;
+    left: 57.5vw;
+    background-image: url(图片素材/fs/物品/dctxz.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.dydys {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 18.5vw;
+    left: 36.5vw;
+    background-image: url(图片素材/fs/物品/dydys.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.dzdys {
+    position: absolute;
+
+    width: 6vw;
+    height: 6vw;
+    top: 18.5vw;
+    left: 43.5vw;
+    background-image: url(图片素材/fs/物品/dzdys.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.fcd {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 18.5vw;
+    left: 50.5vw;
+    background-image: url(图片素材/fs/物品/fcd.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.gydl {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 18.5vw;
+    left: 57.5vw;
+    background-image: url(图片素材/fs/物品/gydl.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.jdys {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 25.5vw;
+    left: 36.5vw;
+    background-image: url(图片素材/fs/物品/jdys.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.jndh {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 25.5vw;
+    left: 43.5vw;
+    background-image: url(图片素材/fs/物品/jndh.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.hfc {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 25.5vw;
+    left: 50.5vw;
+    background-image: url(图片素材/fs/物品/hfc.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.slb {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 25.5vw;
+    left: 57.5vw;
+    background-image: url(图片素材/fs/物品/slb.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.myzrj {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 32.5vw;
+    left: 36.5vw;
+    background-image: url(图片素材/fs/物品/myzrj.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.scyz {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 32.5vw;
+    left: 43.5vw;
+    background-image: url(图片素材/fs/物品/scyz.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.gwsx {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 32.5vw;
+    left: 50.5vw;
+    background-image: url(图片素材/fs/物品/gwsx.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.smd {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 32.5vw;
+    left: 57.5vw;
+    background-image: url(图片素材/fs/物品/smd.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.ymb {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 39.5vw;
+    left: 54.5vw;
+    background-image: url(图片素材/fs/物品/ymb.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.wzyj {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 39.5vw;
+    left: 40.5vw;
+    background-image: url(图片素材/fs/物品/wzyj.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.des {
+    position: absolute;
+    width: 28vw;
+    height: 35vw;
+    top: 10vw;
+    left: 66vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.name {
+    width: 100%;
+    height: 6vw;
+    font-size: 4vw;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.line1 {
+    position: absolute;
+    top: 5vw;
+    left: 34.6vw;
+    height: 40vw;
+    background-image: url(图片素材/boss/line1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.line2 {
+    position: absolute;
+    top: 5vw;
+    left: 64.2vw;
+    height: 40vw;
+    background-image: url(图片素材/boss/line1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 20px;
+    margin-right: 20px;
+}

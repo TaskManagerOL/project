@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hollw Knight</title>
+    <link rel="shortcut icon" href="图片素材/小骑士ico.ico" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="通用界面.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+
+<body>
+    <!-- 通用nav -->
+    <div class="nav">
+        <div class="logo">
+        </div>
+        <div class="logotext">
+            <a href="index.html">
+            </a>
+        </div>
+        <ul class="subnav">
+            <li class="box1"><a class="gd" href="gd.html">骨钉&骨钉技</a></li>
+            <li class="box2"><a class="fs" href="fs.html">法术&道具</a></li>
+            <li class="box3">
+                <a id="rw" class="rw" href="npc.html">NPC&BOSS</a>
+                <div class="subrw">
+
+                </div>
+            </li>
+            <li class="box4"><a class="hf" href="hf.html">护符大全</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="pic" id="pic">
+            <div class="text1">无论什么代价都在所不惜。</div>
+            <div class="text2">没有可以思考的心智。</div>
+            <div class="text3">没有可以屈从的意志。</div>
+            <div class="text4">没有为苦难哭泣的声音。</div>
+            <div class="text5">生于神与虚空之手。</div>
+            <div class="text6">你必封印在众人梦中散布瘟疫的障目之光。</div>
+            <div class="text7">你是容器。</div>
+            <div class="text8">你是</div>
+            <div class="text9">空洞骑士</div>
+        </div>
+        <div class="content">
+            <div class="top" id="jump1"></div>
+            <div class="middle">
+                <h1>空洞骑士 游戏介绍</h1><br><br>
+                <p>《空洞骑士》是独立团队 Team Cherry 开发的一款 2D 类银河恶魔城动作冒险游戏。</p>
+                <br>
+                <p>「在《空洞骑士》中打造属于自己的冒险之旅！穿越一个庞大却废弃的属于昆虫与英雄的王国，开启史诗般的冒险旅程。探索幽深的洞穴，与被感染的生物战斗，结识友好又奇异的昆虫，整个游戏都是经典的手绘 2D 风格。」
+                </p>
+                <br>
+                <p>Hollow Knight背后的概念最初是在2013年的Ludum Dare游戏开发大赛中构思的。Team
+                    Cherry希望打造一款受旧平台游戏启发的游戏，复制其影响力的探索方面。游戏的灵感包括Faxanadu，银河战士，塞尔达II：林克冒险和洛克人X。</p>
+                <br>
+                <p>开发部分资金来自Kickstarter众筹活动，截至2014年底筹集了超过57，000澳元。它于2017年初在Microsoft
+                    Windows，macOS和Linux上发布，并于2018年为Nintendo Switch，PlayStation 4和Xbox One发布。发布后，Team Cherry通过四个DLC来丰富游戏。
+                </p>
+                <br>
+                <p>《空洞骑士》受到评论家的好评，其音乐、艺术风格、世界构建、氛围、战斗和难度水平尤其受到赞誉。到 2020 年 12 月，该游戏已售出 300 万份。续集《空洞骑士：丝之歌》目前正在开发中。</p>
+            </div>
+            <div class="bottom"></div>
+        </div>
+        <div class="music" title="布鲁姆在线演奏OvO(可拖动哦）" id="move">
+            <video id="music" src="游戏原声/Christopher Larkin - Hollow Knight.mp3" autoplay="autoplay"></video>
+            <button class=" previous" id="previous" title="上一首">&#xe603;</button>
+            <button class="pause" id="pause" title="暂停">&#xe800;</button>
+            <button class="next" id="next" title="下一首">&#xe602;</button>
+            <button class="loop" id="loop" title="洗脑循环/取消循环">&#xe60f;</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="allin">
+            <div class="s1"><a href="#jump1">游戏介绍</a></div>
+            <div class="s2"><a href="#jump2">怪物图鉴</a></div>
+            <div class="s3"><a href="#jump3">地图展示</a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="boss" id="jump2">
+            <div class="srcoll">
+                <button class="left" id="leftbutton"></button>
+                <div class="picture" id="picture"></div>
+                <button class="right" id="rightbutton"></button>
+            </div>
+            <div class="line1"></div>
+            <div class="bosscontent">
+                <div class="name">
+                    <br>
+                    <h1 class="id" id="name">辐光</h1><br>
+                    <p id="des1">纠缠着圣巢昆虫尸骸的瘟疫、感染、疯狂……从这个衰败王国的子民眼中尖啸而出的光芒。这是源自何处？我这样的凡夫大概永远不会明白吧。</p>
+                </div>
+                <div class="line2"></div>
+                <div class="des">
+                    <p id="des2">辐光是一道光芒，很像是精华，属于高等生灵。虚空与她对立，是她的宿敌。飞蛾部落是从她的光芒中诞生的，他们十分崇敬她。</p>
+
+                    <p id="des3">
+                        后来，苍白之王到达圣巢，并且以扩张思想的方式发展了新的臣民，结果飞蛾部落背叛了辐光，转而崇拜白王。因此，辐光几乎完全被遗忘了。不过，她的信仰还是留下了踪迹，例如圣巢之冠上的雕像。这时，圣巢正值鼎盛时期，辐光的记忆却开始在王国里传播。
+                    </p>
+                    <p id="des4">
+                        不久，圣巢的所有虫子都开始梦到她，那一道耀眼的光芒。这种梦会使虫子的心智破碎，最终意志也受辐光役使。但是，白王和他的臣民试图抵抗这种梦境，于是记忆的扩散就形成了感染。辐光通过感染让虫子实现统一，然而代价是失去思考的能力。
+                        。她促使感染恢复全盛状态，再次危害到圣巢的土地，同时也使得小骑士回到圣巢。</p>
+                </div>
+            </div>
+        </div>
+        <div class="line" id="jump3">
+            <div class="linepic" id='smz'></div>
+        </div>
+        <div class="bluebutterfly1"></div>
+        <div class="bluebutterfly2"></div>
+        <div class="bluebutterfly4"></div>
+        <div class="bluebutterfly3"></div>
+
+        <div class="map">
+            <div class="mapin">
+                <div class="scroll">
+                    <button class="over" id="over"></button>
+                    <div class="littlemapin">
+                        <div class="scrollmap" id="scroll">
+                            <div class="map1" id="map1" title="白色宫殿"></div>
+                            <div class="map2" id="map2" title="古老盆地"></div>
+                            <div class="map3" id="map3" title="呼啸山崖"></div>
+                            <div class="map4" id="map4" title="泪水之城"></div>
+                            <div class="map5" id="map5" title="真菌荒地"></div>
+                            <div class="map6" id="map6" title="遗忘十字路"></div>
+                            <div class="map7" id="map7" title="水晶山峰"></div>
+                            <div class="map8" id="map8" title="安息之地"></div>
+                            <div class="forscroll1" id="forscroll1" title="白色宫殿"></div>
+                            <div class="forscroll2" id="forscroll2" title="古老盆地"></div>
+                            <div class="forscroll3" id="forscroll3" title="呼啸山崖"></div>
+                            <div class="forscroll4" id="forscroll4" title="泪水之城"></div>
+                            <div class="forscroll5" id="forscroll5" title="真菌荒地"></div>
+                        </div>
+                    </div>
+                    <button class="behind" id="behind"></button>
+                </div>
+                <div class="line3"></div>
+                <div class="mapcontent">
+                    <div class="moremap" id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 图片预加载 -->
+    <div id="preload-01"></div>
+    <div id="preload-02"></div>
+    <div id="preload-03"></div>
+    <div id="preload-04"></div>
+    <div id="preload-05"></div>
+    <div id="preload-06"></div>
+    <div id="preload-07"></div>
+    <div id="preload-08"></div>
+    <div id="preload-09"></div>
+    <div id="preload-10"></div>
+    <div id="preload-11"></div>
+    <div id="preload-12"></div>
+    <div id="preload-13"></div>
+    <div id="preload-14"></div>
+    <div id="preload-15"></div>
+    <div id="preload-16"></div>
+    <div id="preload-17"></div>
+    <div id="preload-18"></div>
+    <div id="preload-19"></div>
+    <div id="preload-20"></div>
+    <div id="preload-21"></div>
+    <div id="preload-22"></div>
+    <div id="preload-23"></div>
+    <div id="preload-24"></div>
+    <!-- 通用footer -->
+    <div class="footer">
+        <div class="pic"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

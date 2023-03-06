@@ -1,0 +1,694 @@
+/* 事实上有一个页面缩小护符错位的情况，大屏不影响，暂不修改 */
+body .music {
+    left: 85vw;
+    top: 25vw;
+    display: flex;
+}
+
+
+.hfq {
+    width: 99vw;
+    height: 60vw;
+    background-image: url(图片素材/hf/bj.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.puttop {
+    position: absolute;
+    height: 6.5vw;
+    top: 12.5vw;
+    left: 8.5vw;
+    width: 58.5vw;
+}
+
+.puttop1 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.puttop2 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 6.5vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.puttop3 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 13vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.puttop4 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 19.5vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.puttop5 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 26vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.puttop6 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 32.5vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.puttop7 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 39vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.puttop8 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 45.5vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.puttop9 {
+    position: absolute;
+    width: 6.5vw;
+    height: 6.5vw;
+    left: 52vw;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.putbottom {
+    position: absolute;
+    width: 27vw;
+    height: 3.2vw;
+    top: 21.75vw;
+    left: 8vw;
+    display: flex;
+    /* background-color: rgba(255, 255, 0, .7); */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* 5.05 */
+.n-1 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 6.2vw;
+    background-image: url(图片素材/hf/1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.n-1:hover {
+    cursor: url(指针/空洞骑士主题鼠标指针/2-指南针改变.png), pointer;
+}
+
+.n-2 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 11.25vw;
+    background-image: url(图片素材/hf/2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-3 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 16.3vw;
+    background-image: url(图片素材/hf/3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-4 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 21.35vw;
+    background-image: url(图片素材/hf/4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-5 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 26.4vw;
+    background-image: url(图片素材/hf/5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-6 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 31.45vw;
+    background-image: url(图片素材/hf/6.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-7 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 36.5vw;
+    background-image: url(图片素材/hf/7.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-8 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 41.55vw;
+    background-image: url(图片素材/hf/8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-9 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 46.6vw;
+    background-image: url(图片素材/hf/9.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-10 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 28.25vw;
+    left: 51.65vw;
+    background-image: url(图片素材/hf/10.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-11 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 9.3vw;
+    background-image: url(图片素材/hf/11.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+
+.n-12 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 14.35vw;
+    background-image: url(图片素材/hf/12.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-13 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 19.4vw;
+    background-image: url(图片素材/hf/13.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-14 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 24.45vw;
+    background-image: url(图片素材/hf/14.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-15 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 29.5vw;
+    background-image: url(图片素材/hf/15.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-16 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 34.55vw;
+    background-image: url(图片素材/hf/16.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-17 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 39.6vw;
+    background-image: url(图片素材/hf/17.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-18 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 44.65vw;
+    background-image: url(图片素材/hf/18.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-19 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 49.7vw;
+    background-image: url(图片素材/hf/19.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-20 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 32.9vw;
+    left: 54.75vw;
+    background-image: url(图片素材/hf/20.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-21 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 6.2vw;
+    background-image: url(图片素材/hf/21.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-22 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 11.25vw;
+    background-image: url(图片素材/hf/22.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-23 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 16.3vw;
+    background-image: url(图片素材/hf/23.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-23:hover {
+    cursor: url(指针/空洞骑士主题鼠标指针/2-吸虫之巢.png), pointer;
+}
+
+.n-24 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 21.35vw;
+    background-image: url(图片素材/hf/24.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-25:hover {
+    cursor: url(指针/空洞骑士主题鼠标指针/2-发光子宫.png), pointer;
+}
+
+.n-25 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 26.4vw;
+    background-image: url(图片素材/hf/25.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-26 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 31.45vw;
+    background-image: url(图片素材/hf/26.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-27 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 36.5vw;
+    background-image: url(图片素材/hf/27.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-28 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 41.55vw;
+    background-image: url(图片素材/hf/28.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-29 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 46.6vw;
+    background-image: url(图片素材/hf/29.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-30 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 37.55vw;
+    left: 51.65vw;
+    background-image: url(图片素材/hf/30.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-31 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 9.3vw;
+    background-image: url(图片素材/hf/31.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-32 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 14.35vw;
+    background-image: url(图片素材/hf/32.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-33 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 19.4vw;
+    background-image: url(图片素材/hf/33.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-34 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 24.45vw;
+    background-image: url(图片素材/hf/34.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-35 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 29.5vw;
+    background-image: url(图片素材/hf/35.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-36 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 34.55vw;
+    background-image: url(图片素材/hf/36.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-36 {
+    cursor: url(指针/空洞骑士主题鼠标指针/2-编制者之歌.png), pointer;
+}
+
+.n-37 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 39.6vw;
+    background-image: url(图片素材/hf/37.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-38 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 44.65vw;
+    background-image: url(图片素材/hf/38.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-39 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 49.7vw;
+    background-image: url(图片素材/hf/39.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.n-39:hover {
+    cursor: url(指针/空洞骑士主题鼠标指针/2-格林之子.png), pointer;
+}
+
+.n-40 {
+    position: absolute;
+    width: 4.8vw;
+    height: 4.8vw;
+    top: 42.2vw;
+    left: 54.75vw;
+    background-image: url(图片素材/hf/40.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.name {
+    position: absolute;
+    width: 18vw;
+    height: 3vw;
+    top: 10vw;
+    left: 68.5vw;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: 'simsun';
+}
+
+.spend {
+    position: absolute;
+    width: 18vw;
+    height: 3vw;
+    top: 13.4vw;
+    left: 68.5vw;
+    /* background-image: url(图片素材/hf/take1.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.big {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 17vw;
+    left: 73.3vw;
+    /* background-color: rgba(255, 0, 255, .5); */
+    /* background-image: url(图片素材/hf/1.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.des {
+    position: absolute;
+    width: 30vw;
+    height: 22vw;
+    top: 26vw;
+    left: 62vw;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+#p1 {
+    text-indent: 2em;
+}
+
+.choose {
+    position: absolute;
+    width: 5.2vw;
+    height: 5.2vw;
+    top: 28vw;
+    left: 6vw;
+    background-image: url(图片素材/hf/arrow1.png), url(图片素材/hf/arrow2.png), url(图片素材/hf/arrow3.png), url(图片素材/hf/arrow4.png);
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    pointer-events: none;
+    transition: all 0.2s linear;
+}

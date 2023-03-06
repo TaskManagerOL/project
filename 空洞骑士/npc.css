@@ -1,0 +1,1212 @@
+.in {
+    height: 50vw;
+    width: 99vw;
+    background-image: url(图片素材/NPC/top.png), url(图片素材/NPC/bottom.png), url(图片素材/fs/tl.png), url(图片素材/fs/tr.png), url(图片素材/fs/bl.png), url(图片素材/fs/br.png);
+    background-repeat: no-repeat;
+    background-position: top, bottom, top left, top right, bottom left, bottom right;
+    background-size: 60vw, 40vw, 12vw, 12vw, 12vw, 12vw;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    width: 9.5vw;
+    height: 3.5vw;
+    color: #fff;
+    top: 1vw;
+    left: 44.8vw;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.leftbutton {
+    position: absolute;
+    width: 6vw;
+    height: 10vw;
+    top: 20vw;
+    left: 0.5vw;
+    background-image: url(图片素材/NPC/changeleft.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.rightbutton {
+    position: absolute;
+    width: 6vw;
+    height: 10vw;
+    top: 20vw;
+    left: 93.5vw;
+    background-image: url(图片素材/NPC/changeright.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+
+
+.black1 {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 5vw;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.black2 {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 5vw;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.grey1 {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 5vw;
+    z-index: 99;
+    position: absolute;
+    top: 5vw;
+    left: 0;
+}
+
+.grey2 {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 5vw;
+    z-index: 99;
+    position: absolute;
+    bottom: 5vw;
+    left: 0;
+}
+
+.line1 {
+    position: absolute;
+    top: 5vw;
+    left: 30vw;
+    height: 40vw;
+    background-image: url(图片素材/boss/line1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.big {
+    top: 8vw;
+    left: 32vw;
+    width: 34vw;
+    height: 34vw;
+    position: absolute;
+}
+
+.line2 {
+    position: absolute;
+    top: 5vw;
+    left: 67vw;
+    height: 40vw;
+    background-image: url(图片素材/boss/line1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 20px;
+    margin-right: 20px;
+}
+
+
+.line3 {
+    position: absolute;
+    left: 68vw;
+    top: 20vw;
+    background-image: url(图片素材/NPC/line2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 27vw;
+    height: 4vw;
+}
+
+.txt {
+    position: absolute;
+    left: 68vw;
+    top: 25vw;
+    color: white;
+    width: 27vw;
+    height: 20vw;
+}
+
+.choose {
+    background-image: url(图片素材/NPC/choose.png);
+    background-size: contain;
+    width: 100%;
+    height: 5vw;
+    z-index: 9;
+    position: absolute;
+    top: 15vw;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.topbutton {
+    background-image: url(图片素材/NPC/arrowtop.png);
+    background-size: contain;
+    width: 100%;
+    height: 1.5vw;
+    z-index: 10;
+    position: absolute;
+    top: 13.5vw;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.bottombutton {
+    background-image: url(图片素材/NPC/arrowbottom.png);
+    background-size: contain;
+    width: 100%;
+    height: 1.5vw;
+    z-index: 10;
+    position: absolute;
+    top: 20vw;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.scroll {
+    top: 7vw;
+    left: 5vw;
+    width: 25vw;
+    height: 35vw;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+
+.allmove {
+    position: relative;
+    height: 130vw;
+    width: 225vw;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.big {
+    background-image: url(图片素材/NPC/jq/czl.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14vw;
+}
+
+.move1 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.n1 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0;
+}
+
+.n2 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n3 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n4 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n5 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n6 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n7 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.n8 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 35vw;
+}
+
+.n9 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 40vw;
+}
+
+.n10 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 45vw;
+}
+
+.n11 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 50vw;
+}
+
+.n12 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 55vw;
+}
+
+.n13 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 60vw;
+}
+
+.move2 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 25vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.n14 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0;
+}
+
+.n15 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n16 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n17 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n18 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n19 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n20 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.n21 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 35vw;
+}
+
+.n22 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 40vw;
+}
+
+.n23 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 45vw;
+}
+
+.n24 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 50vw;
+}
+
+.move3 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 50vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move4 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 75vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move5 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 100vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move6 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 125vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move7 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 150vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move8 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 175vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.move9 {
+    position: absolute;
+    width: 25vw;
+    height: 50vw;
+    z-index: 9;
+    top: 15vw;
+    left: 200vw;
+    /* background-color: rgba(255, 255, 255, .2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 2.2vw;
+}
+
+.n25 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n26 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n27 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n28 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n29 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n30 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n31 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.n32 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 35vw;
+}
+
+.n33 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 40vw;
+}
+
+.n34 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 45vw;
+}
+
+.n35 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 50vw;
+}
+
+.n36 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 55vw;
+}
+
+.n37 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 60vw;
+}
+
+.n38 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 65vw;
+}
+
+.n39 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 70vw;
+}
+
+.n40 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 75vw;
+}
+
+.n41 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 80vw;
+}
+
+.n42 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n43 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n44 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n45 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n46 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n47 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n48 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n49 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n50 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n51 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n52 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n53 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n54 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.n55 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 35vw;
+}
+
+.n56 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 40vw;
+}
+
+.n57 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 45vw;
+}
+
+.n58 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 50vw;
+}
+
+.n59 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 55vw;
+}
+
+.n60 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 60vw;
+}
+
+.n61 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 65vw;
+}
+
+.n62 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 70vw;
+}
+
+.n63 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 75vw;
+}
+
+.n64 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 80vw;
+}
+
+.n65 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 85vw;
+}
+
+.n66 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 90vw;
+}
+
+.n67 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 95vw;
+}
+
+.n68 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 100vw;
+}
+
+.n69 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 105vw;
+}
+
+.n70 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 110vw;
+}
+
+.n71 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 115vw;
+}
+
+.n72 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 120vw;
+}
+
+.n73 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 125vw;
+}
+
+.n74 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n75 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n76 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n77 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n78 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n79 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n80 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n81 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n82 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n83 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n84 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n85 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n86 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.n87 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 0vw;
+}
+
+.n88 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 5vw;
+}
+
+.n89 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 10vw;
+}
+
+.n90 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 15vw;
+}
+
+.n91 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 20vw;
+}
+
+.n92 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 25vw;
+}
+
+.n93 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    line-height: 200%;
+    text-align: center;
+    top: 30vw;
+}
+
+.nametxt {
+    position: absolute;
+    left: 68vw;
+    top: 5vw;
+    color: white;
+    width: 27vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 3vw;
+}
+
+.des {
+    font-size: 1.5vw;
+}
+
+.txt {
+    text-indent: 2em;
+    font-size: 1.2vw;
+}

@@ -1,0 +1,425 @@
+/* 主界面设置 */
+
+html,
+body {
+    min-width: 1500px;
+    font-family: "SimSun";
+    text-shadow: 0 0 17px white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    cursor: url(指针/空洞骑士主题鼠标指针/1-正常选择-一般光标.png), auto;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* 设置结束 */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999999;
+    text-shadow: 0 0 7px white;
+}
+
+/*navlogo部分制作开始*/
+
+.logo {
+    flex: 1.25;
+    color: rgb(255, 255, 255);
+    background-image: url(图片素材/nav/LOGO.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+
+.logotext {
+    flex: 1.25;
+}
+
+.logotext a {
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-image: url(图片素材/nav/logotext.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+}
+
+/*navlogo部分制作结束*/
+
+/* nav链接部分制作开始 */
+
+.subnav {
+    flex: 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    height: 100%;
+    position: relative;
+}
+
+ul li a {
+    width: 210%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 900;
+    transition: background-color 0.3s linear 0s;
+}
+
+ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 7px black;
+    transition: all 0.6s linear 0s;
+}
+
+
+
+/* nav链接部分制作开始 */
+
+/* nav链接拓展部分制作开始 */
+/* .subrw {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    top: 100px;
+    left: -83px;
+    background-color: rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+
+    border-radius: 20PX;
+
+}
+
+.box3:hover .subrw {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s linear;
+} */
+
+
+/* footer部分制作开始 */
+
+.footer {
+    height: 240px;
+    background-color: black;
+    width: 100%;
+}
+
+.footer .pic {
+    height: 100%;
+    background-image: url(图片素材/footer/footer-front.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    box-shadow: 0 1vh 1vh 0 black inset;
+    transition: background-image 0.5s linear;
+    cursor: url(指针/空洞骑士主题鼠标指针/1-正常选择-蓝蝴蝶.png), pointer;
+}
+
+.footer .pic:hover {
+    background-image: url(图片素材/footer/footer-behind.png);
+}
+
+/*结束*/
+
+/* 音乐盒制作 */
+
+.music {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 480px;
+    left: 8%;
+    border-radius: 80px;
+    background-color: rgb(246, 211, 164);
+    background-image: url(图片素材/music/player.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 3px 4.5px 3px black;
+}
+
+.music video {
+    visibility: hidden;
+}
+
+.music button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear 0.6s;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    border: 0;
+}
+
+.music .pause {
+    top: -50px;
+}
+
+.music:hover button {
+    visibility: visible;
+}
+
+.music:hover .pause {
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.music .previous {
+    left: -50px;
+}
+
+.music:hover .previous {
+    opacity: 1;
+    transition: opacity 0.2s linear 0.2s;
+}
+
+.music .loop {
+    bottom: -50px;
+}
+
+.music:hover .loop {
+    opacity: 1;
+    transition: opacity 0.2s linear 0.4s;
+}
+
+.music .next {
+    right: -50px;
+}
+
+.music:hover .next {
+    opacity: 1;
+    transition: opacity 0.2s linear .6s;
+}
+
+/* 结束，但是最好实现拖动 */
+
+@keyframes butterfly1 {
+    27% {
+        background-image: url(图片素材/side/1.png);
+    }
+
+    28.5% {
+        background-image: url(图片素材/side/2.png);
+    }
+
+    28.75% {
+        background-image: url(图片素材/side/3.png);
+    }
+
+    29.25% {
+        background-image: url(图片素材/side/4.png);
+    }
+
+    29.5% {
+        background-image: url(图片素材/side/5.png);
+    }
+
+    30% {
+        background-image: url(图片素材/side/6.png);
+    }
+
+    62.5% {
+        background-image: url(图片素材/side/1.png);
+    }
+
+    63.5% {
+        background-image: url(图片素材/side/2.png);
+    }
+
+    63.75% {
+        background-image: url(图片素材/side/3.png);
+    }
+
+    64.25% {
+        background-image: url(图片素材/side/4.png);
+    }
+
+    64.5% {
+        background-image: url(图片素材/side/5.png);
+    }
+
+    64.75% {
+        background-image: url(图片素材/side/6.png);
+    }
+
+    91% {
+        background-image: url(图片素材/side/1.png);
+    }
+
+    92% {
+        background-image: url(图片素材/side/2.png);
+    }
+
+    93.5% {
+        background-image: url(图片素材/side/3.png);
+    }
+
+    93.75% {
+        background-image: url(图片素材/side/4.png);
+    }
+
+    94.5% {
+        background-image: url(图片素材/side/5.png);
+    }
+
+    94.75% {
+        background-image: url(图片素材/side/6.png);
+    }
+
+    95% {
+        background-image: url(图片素材/side/1.png);
+    }
+
+    96.5% {
+        background-image: url(图片素材/side/2.png);
+    }
+
+    96.75% {
+        background-image: url(图片素材/side/3.png);
+    }
+
+    97.25% {
+        background-image: url(图片素材/side/4.png);
+    }
+
+    97.5% {
+        background-image: url(图片素材/side/5.png);
+    }
+
+    97.75% {
+        background-image: url(图片素材/side/6.png);
+    }
+}
+
+@keyframes butterfly2 {
+    27% {
+        background-image: url(图片素材/side/1\ -\ 副本.png);
+    }
+
+    28.5% {
+        background-image: url(图片素材/side/2\ -\ 副本.png);
+    }
+
+    28.75% {
+        background-image: url(图片素材/side/3\ -\ 副本.png);
+    }
+
+    29.25% {
+        background-image: url(图片素材/side/4\ -\ 副本.png);
+    }
+
+    29.5% {
+        background-image: url(图片素材/side/5\ -\ 副本.png);
+    }
+
+    30% {
+        background-image: url(图片素材/side/6\ -\ 副本.png);
+    }
+
+    62.5% {
+        background-image: url(图片素材/side/1\ -\ 副本.png);
+    }
+
+    63.5% {
+        background-image: url(图片素材/side/2\ -\ 副本.png);
+    }
+
+    63.75% {
+        background-image: url(图片素材/side/3\ -\ 副本.png);
+    }
+
+    64.25% {
+        background-image: url(图片素材/side/4\ -\ 副本.png);
+    }
+
+    64.5% {
+        background-image: url(图片素材/side/5\ -\ 副本.png);
+    }
+
+    64.75% {
+        background-image: url(图片素材/side/6\ -\ 副本.png);
+    }
+
+    91% {
+        background-image: url(图片素材/side/1\ -\ 副本.png);
+    }
+
+    92% {
+        background-image: url(图片素材/side/2\ -\ 副本.png);
+    }
+
+    93.5% {
+        background-image: url(图片素材/side/3\ -\ 副本.png);
+    }
+
+    93.75% {
+        background-image: url(图片素材/side/4\ -\ 副本.png);
+    }
+
+    94.5% {
+        background-image: url(图片素材/side/5\ -\ 副本.png);
+    }
+
+    94.75% {
+        background-image: url(图片素材/side/6\ -\ 副本.png);
+    }
+
+    95% {
+        background-image: url(图片素材/side/1\ -\ 副本.png);
+    }
+
+    96.5% {
+        background-image: url(图片素材/side/2\ -\ 副本.png);
+    }
+
+    96.75% {
+        background-image: url(图片素材/side/3\ -\ 副本.png);
+    }
+
+    97.25% {
+        background-image: url(图片素材/side/4\ -\ 副本.png);
+    }
+
+    97.5% {
+        background-image: url(图片素材/side/5\ -\ 副本.png);
+    }
+
+    97.75% {
+        background-image: url(图片素材/side/6\ -\ 副本.png);
+    }
+}

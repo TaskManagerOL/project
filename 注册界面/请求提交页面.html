@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        input {
+            outline: 0;
+        }
+
+        .big {
+            width: 100%;
+            height: 792px;
+            background-image: url(bgi1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 2s linear;
+        }
+
+        .mirror {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+        }
+
+        .title {
+            position: absolute;
+            color: white;
+            font-weight: 900;
+            font-size: 50px;
+            text-align: center;
+            top: 150px;
+            width: 1200px;
+            height: 50px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+        .passwordbox {
+            position: absolute;
+            top: 250px;
+            width: 400px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            border: 0;
+            box-shadow: inset rgba(0, 0, 0, 0.5) 1px 1px 2px;
+            text-indent: 1em;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+        }
+
+        #text {
+            position: absolute;
+            top: 400px;
+            width: 400px;
+            height: 160px;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            border: 0;
+            box-shadow: inset rgba(0, 0, 0, 0.5) 1px 1px 2px;
+            color: rgba(255, 255, 255);
+            font-size: 30px;
+            text-align: center;
+            line-height: 150%;
+        }
+
+        .submitbox {
+            position: absolute;
+            top: 320px;
+            width: 130px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 4px;
+            border: 0;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .see {
+            position: absolute;
+            top: 326px;
+            right: 580px;
+            background-image: url(hidden.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big" id="big">
+        <div class="mirror">
+            <div class="title" id="title">输入字符串以转化为数字</div>
+                <input class="passwordbox" id="passwordbox" type="text" name="password"
+                    value="Please enter your new strings">
+                </input>
+                <input class="submitbox" id="submitbox" type="submit" value="NO WAY" disabled="disabled"></input>
+                <div id="text"></div>
+        </div>
+    </div>
+
+    <script src="/jQuery.js"></script>
+    <script>
+        var passwordlimit = /^[0-z]{1,16}|-[0-z]{1,16}$/;
+        var title = document.getElementById("title");
+        document.addEventListener("selectstart", function (e) {
+            e.preventDefault();
+        });
+        var password = document.getElementById("passwordbox")
+        password.onfocus = function () {
+            if (password.value == "Please enter your new strings") {
+                password.value = "";
+            }
+            this.style.color = "rgba(255, 255, 255, 0.9)";
+        }
+        password.onblur = function () {
+            if (password.value == "") {
+                password.value = "Please enter your new strings";
+                this.style.color = "rgba(255, 255, 255, 0.5)";
+                isPrime = 0;
+            }
+        }
+        var big = document.getElementById("big");
+        var i = 2;
+        window.setInterval(() => {
+            if (i == 5) {
+                i = 1;
+            }
+            big.style.backgroundImage = "url(bgi" + i + ".png)";
+            i++;
+        }, 30000);
+        var see = document.getElementById("see");
+        var isPrime = 0;
+        var submitlimit = document.getElementById("submitbox");
+        $(submitlimit).on("click",function(){
+            
+                window.setTimeout(() => {
+                    title.innerHTML = "biu~数据已发送"
+                }, 0)
+                window.setTimeout(() => {
+                    title.innerHTML = "输入字符串以转化为数字"
+                }, 2000)
+                jug()
+        })
+        function jug() {
+            if (passwordlimit.test(password.value)&&password.value!="Please enter your new strings") {
+                submitlimit.value = "Sign me in";
+                submitlimit.disabled = "";
+            } else {
+                submitlimit.value = "NO WAY";
+                submitlimit.disabled = "disabled";
+            }
+        }
+        window.onkeyup = function () {
+            jug();
+        }   
+        var isP = 0;
+        window.onkeydown = function (e) {
+            if (e.keyCode == 20) {
+                if (isP == 0) {
+                    isP = 1;
+                    title.innerHTML = "大写输入已开启";
+                    window.setTimeout(() => {
+                        title.innerHTML = "Login";
+                    }, 2000)
+                }
+                else {
+                    isP = 0;
+                }
+            }
+            if (e.keyCode == 13&&passwordlimit.test(password.value)) {
+                //回车 
+                $.ajax({
+                    url:'http://125.217.52.226:8008/json',
+                    type:"POST",
+                    dataType:"json",
+                    data:JSON.stringify({code:password.value}),
+                    //把输入的东西转成json格式发送
+                    success:function(res){
+                    password.value = "Please enter your new strings"
+                    password.style.color = "rgba(255, 255, 255, 0.5)";
+                    jug()
+                    $("#text").html("输入的信息"+res.msg+"<br>转换成的数字为"+res.code)
+                    }
+                })
+                //?jQuery函数定义不出来?
+                window.setTimeout(() => {
+                    title.innerHTML = "biu~数据已发送"
+                }, 0)
+                window.setTimeout(() => {
+                    title.innerHTML = "输入字符串以转化为数字"
+                }, 2000)
+            }
+        }
+
+        //简单写一下Ajax
+        $(function(){
+            $('#submitbox').on('click',function(){
+                $.ajax({
+                    url:'http://125.217.52.226:8008/json',
+                    type:"POST",
+                    dataType:"json",
+                    data:JSON.stringify({code:password.value}),
+                    //把输入的东西转成json格式发送
+                    success:function(res){
+                    password.value = "Please enter your new strings"
+                    password.style.color = "rgba(255, 255, 255, 0.5)";
+                    jug()
+                    if(res.code==-1){
+                        $("#text").html("输入的信息错误 ☹️"+"<br>错误信息为"+res.msg)
+                    }
+                    else{
+                        $("#text").html("输入的信息"+res.msg+"<br>转换成的数字为"+res.code)
+                    }
+                }
+                })
+            })
+        })
+        
+    </script>
+     
+</body>
+
+</html>
